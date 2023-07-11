@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+    <style>
+        .container{
+            border: 3px solid brown;
+            height: 500px;
+            width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .item{
+            border: 2px solid yellowgreen;
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            margin: 15px 10px;
+            padding: 3px;
+        }
+        #item-1{
+            flex-grow: 2;
+            flex-shrink: 4;
+        }
+        #item-2{
+            flex-basis: 150px;
+        }#item-3{
+            align-self: center;
+        }        
+
+    </style>
+</head>
+<body>
+    <h3>Flexbox tutorial of CSS</h3>
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <style>
+        .container{
+            font: italic;
+            border: 3px solid greenyellow;
+            background-color: rgb(135, 135, 215);
+            padding: 10px 20px;
+            margin: 10px;
+            height: auto;
+            width: auto;
+        }
+        a{
+            color: black;
+            border:3px solid dodgerblue;
+        }
+        a:hover{
+            background-color: black;
+            border-color: green;
+        }
+        .btn{
+            color: black;
+            border: 3px solid black;
+            padding: 6px;
+            cursor: pointer;
+            border-radius: 9px;
+            text-decoration: underline;
+            background-color: aqua;
+        }
+        .btn:hover{
+            color: darkblue;
+            background-color: rgb(17, 140, 223);
+            border: 3px solid salmon;
+        }
+        a:visited{
+            background-color: aqua;
+        }
+        a:active{
+            background-color: yellowgreen;
+        }
+        .btn:active{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is pseudo code implementation</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, nobis rerum aperiam vel repellendus dicta! Expedita labore explicabo voluptatum molestiae illo! Odio nesciunt sapiente ipsum neque vero necessitatibus ea natus!</p>
+    <a href="https://facebook.com" class="btn" target="_blank">More options</a>
+    <a href="https://instagram.com" class="btn" target="_blank">Apps</a>
+    <button class="btn" target="_blank">About us</button>     <!-- here ,botton is uesd -->
+</body>
+</html>

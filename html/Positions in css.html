@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color: bisque;
+            border-radius: 15px;
+            height: 1000px;
+            width: auto;
+        }
+        .box{
+            border: 3px solid blue;
+            display: inline-block;
+            height: 150px;
+            width: 200px;
+            margin: 15px 10px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        #box3{ 
+            /* position: relative;     changing position from normal position to any direction like left right
+            left: 50px; */
+
+            /* position: absolute;   changing position from normal position to its parent box 
+            left: 100px;
+            top: 150px; */
+
+            /* position: fixed;   position: of that element are fixed to that window when you scroll it cannot slide it becomes fixed
+            right: 100px;
+            top: 60px; */
+
+            position: sticky;     /*  elements relative  to user scroll postion */
+            top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Positions in css</h3>
+    <div class="container">
+        <div class="box" id="box1">This is box 1</div>
+        <div class="box" id="box2">This is box 2</div>
+        <div class="box" id="box3">This is box 3</div>
+        <div class="box" id="box4">This is box 4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box models in css</title>
+    <style>
+        .original {
+            background-color: antiquewhite;
+            height: 600px;
+            width: 750px;
+            border: 6px solid black;
+            margin: auto;
+        }
+
+        #setcol {
+            background-color: rgb(red, rgb(227, 150, 222), blue);
+            border: 3px 3px;
+            border-color: rgb(108, 30, 211);
+            border-style: double;
+            height: auto;
+            width: auto;
+            padding: 12px 20px;
+            float: bottom left;
+            text-align: justify;
+
+        }
+
+        #carrybag {
+            height: auto;
+            width: auto;
+            background-color: blueviolet;
+            border: 3px 3px;
+            border-style: dashed;
+            padding: 20px 50px;
+            padding-right: 25px;
+            text-align: justify;
+        }
+        #book {
+            background-color: maroon;
+            height: auto;
+            width: auto;
+            border: 3px;
+            border-color: bisque;
+            border-style: double;
+            float: bottom;
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+<body>
+    <h3>BOX implementation in CSS</h3>
+    <div class="original">
+        <h2>this is trial box</h2>
+        <div id="setcol" class="original">
+            <h4>Charger</h4>
+            <p id="trail" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut distinctio tenetur modi vero, pariatur cupiditate. Qui, dicta culpa quaerat sequi nam minima rerum. Minus, praesentium sit iure aliquid vitae, suscipit veniam facilis ducimus distinctio repudiandae rerum adipisci, voluptas at?</p>
+        </div>
+        <div id="carrybag" class="original">
+            <h4>bags</h4>
+            <p id="bags" class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae iure inventore rem minima expedita obcaecati culpa adipisci repellendus, eligendi dicta? Beatae at, quasi quia odio veritatis nemo voluptas ab repellat, aspernatur tempore quisquam!</p>
+        </div>
+        <div id="book" class="original">
+            <h4>Books</h4>
+            <p id="notebook" class="pages">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit totam consequatur maiores quae nihil mollitia dolores nobis velit, soluta doloremque est ducimus ad alias sunt nemo esse, dolorem dolore veniam.</p>
+        </div>
+    </div>
+</body>
+
+</html>

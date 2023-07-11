@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Last topic</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'section section aside'
+            'footer footer footer';
+        }
+        .item{
+            background-color: bisque;
+            border: 3px solid rebeccapurple;
+            padding: 10px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #footer{
+            grid-area: footer;
+        }
+        #aside{
+            grid-area: aside;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="navbar">
+            home about contact
+        </div>
+        <div class="item" id="section">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus vero ea provident dicta libero magni iste nam eius iure tenetur, vitae magnam. Possimus, cumque labore natus accusamus eveniet sapiente unde.
+        </div>
+        <div class="item" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, alias, necessitatibus quo itaque voluptate velit delectus veritatis rerum ullam praesentium cum quasi! Perspiciatis cumque odio hic dolor ab ex officia.
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus deleniti nisi fuga sequi obcaecati. Expedita.</footer>
+    </div>
+</body>
+</html>

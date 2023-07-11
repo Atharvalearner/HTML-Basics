@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 400px;
+            border: 3px solid black;
+        }
+        #box-1{
+            background-color: red;
+            /* visibility will hide the element but it remains elments empty space. */
+            /* visibility: hidden; */
+        }
+        #box-2{
+            background-color: green;
+            /* z-index will always work for positions: absolute ,relative ,fixed and sticky */
+            /* z-index will hide elment and the space */
+            position: relative;
+            top: 25px;
+            /* here z-index is 3(we give any random num.) for overlapping make unhide from overlap of other element */
+            /* but for fronting elements z-index is must maximum than hidden element. */
+            z-index: 3;
+        }
+        #box-3{
+            background-color: yellow;
+            position: relative;
+            z-index: 4;
+            /* here z-index is maximum than #box-2 so,we gives box-3 in front and box-2 will hide back */
+        }
+        #box-4{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>This is Visibility implementation in css</h3>
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+</body>
+</html>

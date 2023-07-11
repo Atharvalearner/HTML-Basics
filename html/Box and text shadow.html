@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box & text shadows</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            border: 3px solid red;
+            margin: 5px;
+            text-align: center;
+            justify-content: center;
+            padding: 3px;
+            box-shadow: 5px 10px plum;
+        }
+        #card-3{
+            box-shadow: -7px -12px violet;    /* here -ve give foe uuper-left shadow of box default it is bottom-right */
+        }
+        #card-2{
+            box-shadow: 3px 8px 15px rgb(106, 67, 6);  /*here, 3px ,8px & 15px is x-shadow, y-shadow & blur-radius color respctively.*/
+        }
+        #card-1{
+            box-shadow: 3px 8px 15px 3px rgb(113, 159, 44);         /*here, 3px ,8px, 15px, 3px is x-shadow, y-shadow blur-radius spread-color color-of-shadow respctively.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is card -1 </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia tenetur, tempora doloribus expedita a nesciunt similique, perferendis dolorem debitis minus perspiciatis mollitia, delectus recusandae natus distinctio at repellat </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this is card -2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, eligendi asperiores. Doloremque praesentium, facilis vel neque magnam a modi minima atque fugiat nisi, voluptatum quisquam voluptatibus sapiente distinctio cupiditate </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>this is card -3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, voluptas illum temporibus dolor voluptatum sequi adipisci culpa assumenda vitae minus quo nihil asperiores nisi doloribus tempore animi similique aut fuga.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transitions</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        #box{
+            display: flex;
+            height: 250px;
+            width: 250px;
+            border-radius: 20px;
+            background-color: violet;
+            justify-content: center;
+            align-items: center;
+            transition-duration: 2s;
+        }
+        #box:hover{
+            background-color: red;
+            height: 350px;
+            width: 350px;
+            border-radius: 50px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>imlementation os CSS transitions</h3>
+    <div class="container">
+        <div id="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>

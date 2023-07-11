@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes & Animations</title>
+    <style>
+        .container {
+            background-color: aquamarine;
+            text-align: center;
+            display: flex;
+        }
+
+        .box {
+            background-color: violet;
+            top: 250px;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: atharva;
+            /*here ,atharva is animation name*/
+            animation-duration: 3s;
+            /*duration of that animation*/
+            animation-iteration-count: 4;
+            /*how many times it run iteration count decides*/
+            /* animation-timing-function: ease-in-out; */
+
+        }
+
+        .bag {
+            background-color: blueviolet;
+            margin: 100px 300px;
+            height: 100px;
+            width: 150px;
+            position: relative;
+            animation-name: raj;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease;
+        }
+
+        @keyframes atharva {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+        @keyframes raj {
+                from {
+                    width: 200px;
+                }
+
+                to {
+                    width: 500px;
+                }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>This is box</h2>
+        </div>
+        <div class="bag">
+            <h2>This is bag</h2>
+        </div>
+    </div>
+</body>
+
+</html>

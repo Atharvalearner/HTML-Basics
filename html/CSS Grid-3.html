@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids in css</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5,2fr);
+            grid-template-rows: repeat(3,3fr);
+            grid-column-gap: 2rem;
+            grid-row-gap: 1rem;
+        }
+        .item {
+            background-color: rgb(152, 97, 203);
+            border: 3px solid brown;
+            padding: 10px;
+        }
+        .item:first-child{
+            grid-column: 1 / span 3;        /*here 1 is column no. and 3 is extend it upto column no. 3 */
+            grid-row: 1 / span 2;          /*here 1 is row no. and 2 is extend it upto row no. 2 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+        <div class="item">this is item</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child pseudo code </title>
+    <style>
+        .container{
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 30px;
+            border: 3px solid purple;
+        }
+        a[target]{
+            font-size: 30px;
+            color: blue;
+        }
+        a[target='_self']{
+            font-size: 15px;
+            color: aquamarine;
+        }
+        input[type='age']{
+            color: bisque;
+            border: 3px solid red;
+        }
+         li:nth-child(3){                   /* in nth child we can set differnt attributes like expession eg.(2n+1)*/
+            color: yellowgreen;
+        }
+        li:nth-child(4){
+            color: orchid;
+        }
+        li:nth-child(even){
+            background-color: khaki;
+        }
+        li:nth-child(odd){
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="google.com" target="_blank">go to google</a></h1>
+        <h1><a href="instagram.com" target="_blank">go to instagram</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter name: ">
+            <input type="age" placeholder="enter age: ">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+        </ul>
+    </div>
+</body>
+</html>
